@@ -179,25 +179,22 @@ class User extends QuovoAbstract
     }
 
     /**
-     * Create an iframe token
+     * Create a UI token
      *
-     * Use this endpoint to create a single-use iframe-access token for a User.
-     * This gives an end user access to their iframe widget and all of their
-     * associated Accounts.
+     * Use this endpoint to create a single-use ui token for a User.
      *
      * @param int $userId
      *
      * @return mixed
      */
-    public function iframe($userId)
+    public function ui_token($userId)
     {
         return $this->post(
             $this->app,
             $this->client,
-            self::PATH . '/' . $userId . '/iframe_token'
+            self::PATH . '/' . $userId . '/ui_token'
         );
     }
-
     /**
      * Get Portfolios
      *
