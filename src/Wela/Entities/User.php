@@ -173,7 +173,7 @@ class User extends QuovoAbstract
         return $this->get(
             $this->app,
             $this->client,
-            self::PATH . '/' . $userId . '/history',
+            self::PATH . '/' . $userId . '/transactions',
             $options
         );
     }
@@ -232,7 +232,7 @@ class User extends QuovoAbstract
         return $this->get(
             $this->app,
             $this->client,
-            self::PATH . '/' . $userId . '/positions',
+            self::PATH . '/' . $userId . '/holdings',
             $options
         );
     }
