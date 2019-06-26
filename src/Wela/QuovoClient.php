@@ -10,7 +10,7 @@ class QuovoClient
 
     const BASE_API_URL = 'https://api.quovo.com/';
 
-    const VERSION = 'v2/';
+    const VERSION = 'v3/';
 
     public function __construct()
     {
