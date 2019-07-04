@@ -20,7 +20,7 @@ class Quovo
 {
     const VERSION = '0.0.1';
 
-    protected $app;
+    public $app;
 
     protected $client;
 
