@@ -29,7 +29,7 @@ class AccessToken
                 'timeout' => 5
             ]);
 
-            $response = $client->request('POST', 'v2/tokens', [
+            $response = $client->request('POST', 'v3/tokens', [
                 'auth' => [
                     $this->config['user'],
                     $this->config['password']
