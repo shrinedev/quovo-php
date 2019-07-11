@@ -285,4 +285,14 @@ class Account extends QuovoAbstract
             self::PATH.'/'.$accountId.'/sync'
         );
     }
+
+    public function extras($accountId)
+    {
+        return $this->get(
+            $this->app,
+            $this->client,
+            self::PATH.'/'.$accountId.'/extras'
+        );
+    }
+
 }
