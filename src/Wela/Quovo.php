@@ -71,6 +71,14 @@ class Quovo
     }
 
     /**
+     * @return Connections
+     */
+    public function Connections()
+    {
+        return new Connections($this->app, $this->client);
+    }
+
+    /**
      * @return History
      */
     public function history()

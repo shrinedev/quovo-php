@@ -155,6 +155,16 @@ class User extends QuovoAbstract
     }
 
     /**
+     * Connections
+     *
+     * @return UserConnection
+     */
+    public function connection()
+    {
+        return new UserConnection($this->app, $this->client);
+    }
+
+    /**
      * Get Transactions
      *
      * Fetches all of a User’s transactions, across all of their Portfolios.
